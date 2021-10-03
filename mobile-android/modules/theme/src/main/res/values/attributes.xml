@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <attr name="colorOnPrimarySurfaceAlphaMedium" format="color" />
+  <attr name="colorOnPrimarySurfaceAlphaLow" format="color" />
+  <attr name="colorOnSurfacePrimary" format="color" />
+  <attr name="colorPrimaryVariantPrimary" format="color" />
+  <attr name="colorSecondaryVariantSecondary" format="color" />
+
+  <attr name="extraColorBlue" format="color" />
+  <attr name="extraColorAmber" format="color" />
+  <attr name="extraColorPurple" format="color" />
+  <attr name="extraColorLime" format="color" />
+  <attr name="extraColorLightGreen" format="color" />
+  <attr name="extraColorGreen" format="color" />
+  <attr name="extraColorTeal" format="color" />
+  <attr name="extraColorCyan" format="color" />
+  <attr name="extraColorPink" format="color" />
+  <attr name="extraColorDeepPurple" format="color" />
+
+  <attr name="elevationFab" format="dimension" />
+  <attr name="elevationBottomAppBar" format="dimension" />
+
+  <attr name="elevationLevelFive" format="dimension" />
+  <attr name="elevationLevelFour" format="dimension" />
+  <attr name="elevationLevelThree" format="dimension" />
+  <attr name="elevationLevelTwo" format="dimension" />
+  <attr name="elevationLevelOne" format="dimension" />
+</resources>

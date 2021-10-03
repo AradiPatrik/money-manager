@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="expense">Expense</string>
+  <string name="income">Income</string>
+  <string name="categories_title">Categories</string>
+  <string name="select_month_title">Select Month</string>
+  <string name="edit_transaction_label_memo">Memo</string>
+  <string name="transaction_editor">Transaction Editor</string>
+  <string name="amount">Amount</string>
+  <string name="date">Date</string>
+  <string name="category">Category</string>
+  <string name="edit_transaction">Edit transaction</string>
+</resources>

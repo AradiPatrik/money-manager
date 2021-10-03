@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!--Top level DayNight theme to be used in AndroidManifest.xml-->
+  <style name="Theme.Claptrap" parent="Base.Theme.Claptrap">
+    <!--Material color attributes (dark theme) -->
+    <item name="colorPrimary">@color/blue_200</item>
+    <item name="colorPrimaryVariant">@color/blue_600</item>
+    <item name="colorSecondary">@color/amber_200</item>
+    <item name="colorSecondaryVariant">@color/amber_300</item>
+    <item name="android:colorBackground">@color/black_900</item>
+    <item name="colorSurface">@color/black_800</item>
+    <item name="colorError">@color/red_200</item>
+    <item name="colorOnPrimary">@color/black_900</item>
+    <item name="colorOnSecondary">@color/black_900</item>
+    <item name="colorOnBackground">@color/white_50</item>
+    <item name="colorOnSurface">@color/white_50</item>
+    <item name="colorOnError">@color/black_900</item>
+    <item name="colorOnSurfacePrimary">?attr/colorPrimary</item>
+    <item name="colorOnPrimarySurfaceAlphaMedium">@color/white_alpha_medium</item>
+    <item name="colorOnPrimarySurfaceAlphaLow">@color/white_alpha_low</item>
+    <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    <item name="android:windowLightNavigationBar" tools:ignore="NewApi">false</item>
+    <item name="android:navigationBarDividerColor" tools:ignore="NewApi">#151515</item>
+    <item name="android:statusBarColor" tools:ignore="NewApi">?attr/colorSurface</item>
+
+    <item name="elevationFab">12dp</item>
+    <item name="elevationBottomAppBar">11dp</item>
+    <item name="elevationLevelFive">3dp</item>
+    <item name="elevationLevelFour">2dp</item>
+    <item name="elevationLevelThree">1.2dp</item>
+    <item name="elevationLevelTwo">1.1dp</item>
+    <item name="elevationLevelOne">0.4dp</item>
+    <item name="colorPrimaryVariantPrimary">?attr/colorPrimary</item>
+    <item name="colorSecondaryVariantSecondary">?attr/colorSecondary</item>
+
+    <!-- Statistic colors -->
+    <item name="extraColorBlue">@color/blue_200</item>
+    <item name="extraColorAmber">@color/amber_200</item>
+    <item name="extraColorPurple">@color/purple_200</item>
+    <item name="extraColorLime">@color/lime_200</item>
+    <item name="extraColorLightGreen">@color/light_green_200</item>
+    <item name="extraColorGreen">@color/green_200</item>
+    <item name="extraColorTeal">@color/teal_200</item>
+    <item name="extraColorCyan">@color/cyan_200</item>
+    <item name="extraColorPink">@color/pink_200</item>
+    <item name="extraColorDeepPurple">@color/deep_purple_200</item>
+  </style>
+</resources>

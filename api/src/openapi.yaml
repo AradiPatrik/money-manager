@@ -1,0 +1,41 @@
+openapi: 3.0.0
+info:
+  title: 'Claptrap'
+  version: '1.0'
+
+security:
+  - bearerAuth: [ ]
+
+paths:
+  '/token-sign-in':
+    put:
+      operationId: tokenSignIn
+      summary: |
+        Validates the token, and initializes the user identified by the sub claim if the user
+        is not already present inside the database. This token can come from either the Google,
+        or the Firebase sign in provider.
+      responses:
+        '200':
+          description: 'Validation successful. User was already present in the database.'
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserWire"
+        '201':
+          description: 'Validation successful. User was created.'
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UserWire"
+        '401':
+          description: 'Token validation failed. The token is either faulty or expired.'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    UserWire:
+      $ref: './schemas/UserWire.yaml'

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+  <Transition
+    motion:constraintSetEnd="@+id/bottom_shown"
+    motion:constraintSetStart="@id/top_shown"
+    motion:duration="200"></Transition>
+
+  <ConstraintSet android:id="@+id/top_shown" />
+
+  <ConstraintSet android:id="@+id/bottom_shown">
+    <Constraint
+      android:id="@+id/upper_view"
+      android:layout_width="480dp"
+      android:layout_height="24dp"
+      android:layout_marginStart="24dp"
+      android:alpha="0"
+      motion:layout_constraintBottom_toTopOf="parent"
+      motion:layout_constraintStart_toStartOf="parent" />
+
+    <Constraint
+      android:id="@+id/lower_view"
+      android:layout_width="480dp"
+      android:layout_height="24dp"
+      android:alpha="1"
+      motion:layout_constraintStart_toStartOf="@id/upper_view"
+      motion:layout_constraintTop_toBottomOf="@id/upper_view" />
+  </ConstraintSet>
+</MotionScene>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <dimen name="keyline_0">2dp</dimen>
+  <dimen name="keyline_1">4dp</dimen>
+  <dimen name="keyline_2">8dp</dimen>
+  <dimen name="keyline_4">16dp</dimen>
+  <dimen name="keyline_5">24dp</dimen>
+
+  <dimen name="list_item_two_line_height">64dp</dimen>
+  <dimen name="list_item_single_line_height">48dp</dimen>
+  <dimen name="margin_default">16dp</dimen>
+  <dimen name="default_backdrop_margin_start">24dp</dimen>
+  <dimen name="default_backdrop_margin_vertical">@dimen/margin_default</dimen>
+
+  <dimen name="component_label_horizontal_margin">@dimen/keyline_4</dimen>
+  <dimen name="elevation_default_top_app_bar">4dp</dimen>
+
+  <item name="alpha_full" type="dimen" format="float">1</item>
+  <item name="alpha_high" type="dimen" format="float">0.8</item>
+  <item name="alpha_medium" type="dimen" format="float">0.55</item>
+  <item name="alpha_low" type="dimen" format="float">0.33</item>
+  <item name="alpha_separator" type="dimen" format="float">0.1</item>
+
+  <item name="default_animation_speed" type="dimen" format="integer">220</item>
+</resources>

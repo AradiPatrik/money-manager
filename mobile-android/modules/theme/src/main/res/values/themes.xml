@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <!--Top level DayNight theme to be used in AndroidManifest.xml-->
+  <style name="Theme.Claptrap" parent="Base.Theme.Claptrap" />
+  <!--Base custom theme which will be shared between both light and dark theme variants-->
+  <style name="Base.Theme.Claptrap" parent="Base.Theme.MaterialThemeBuilder">
+    <!--Material color attributes (light theme) -->
+    <!--colorPrimary colors map to components and elements, such as app bars and buttons. -->
+    <!--colorSecondary colors are most often used as accents on components, such as FABs and -->
+    <!--selection controls.-->
+    <item name="colorPrimary">@color/blue_300</item>
+    <item name="colorPrimaryVariant">@color/blue_600</item>
+    <item name="colorSecondary">@color/amber_200</item>
+    <item name="colorSecondaryVariant">@color/amber_300</item>
+    <!--colorBackground appears behind scrollable content and is used for the default window-->
+    <!--background. colorSurface is mapped to the surface of components such as cards, sheets-->
+    <!--and menus. colorError is used to indicate an error state for components such as-->
+    <!--text fields.-->
+    <item name="android:colorBackground">@color/white_50</item>
+    <item name="colorSurface">@color/white_50</item>
+    <item name="colorError">@color/red_600</item>
+    <!--"On" colors define how text, icons and strokes are colored in relation to the surface-->
+    <!--on which they appear.-->
+    <item name="colorOnPrimary">@color/black_900</item>
+    <item name="colorOnSecondary">@color/black_900</item>
+    <item name="colorOnBackground">@color/black_900</item>
+    <item name="colorOnSurface">@color/black_900</item>
+    <item name="colorOnError">@color/white_50</item>
+    <item name="colorOnSurfacePrimary">?attr/colorOnSurface</item>
+    <item name="colorOnPrimarySurfaceAlphaMedium">@color/white_alpha_medium</item>
+    <item name="colorOnPrimarySurfaceAlphaLow">@color/white_alpha_low</item>
+    <item name="colorPrimaryVariantPrimary">?attr/colorPrimaryVariant</item>
+    <item name="colorSecondaryVariantSecondary">?attr/colorSecondaryVariant</item>
+
+    <!-- Statistic colors -->
+    <item name="extraColorBlue">@color/blue_400</item>
+    <item name="extraColorAmber">@color/amber_300</item>
+    <item name="extraColorPurple">@color/purple_500</item>
+    <item name="extraColorLime">@color/lime_500</item>
+    <item name="extraColorLightGreen">@color/light_green_500</item>
+    <item name="extraColorGreen">@color/green_500</item>
+    <item name="extraColorTeal">@color/teal_500</item>
+    <item name="extraColorCyan">@color/cyan_500</item>
+    <item name="extraColorPink">@color/pink_500</item>
+    <item name="extraColorDeepPurple">@color/deep_purple_500</item>
+
+    <item name="elevationFab">12dp</item>
+    <item name="elevationBottomAppBar">9dp</item>
+    <item name="elevationLevelFive">8dp</item>
+    <item name="elevationLevelFour">5dp</item>
+    <item name="elevationLevelThree">4dp</item>
+    <item name="elevationLevelTwo">2dp</item>
+    <item name="elevationLevelOne">1dp</item>
+
+    <!--Material type attributes-->
+    <item name="textAppearanceHeadline1">@style/TextAppearance.Claptrap.Headline1</item>
+    <item name="textAppearanceHeadline2">@style/TextAppearance.Claptrap.Headline2</item>
+    <item name="textAppearanceHeadline3">@style/TextAppearance.Claptrap.Headline3</item>
+    <item name="textAppearanceHeadline4">@style/TextAppearance.Claptrap.Headline4</item>
+    <item name="textAppearanceHeadline5">@style/TextAppearance.Claptrap.Headline5</item>
+    <item name="textAppearanceHeadline6">@style/TextAppearance.Claptrap.Headline6</item>
+    <item name="textAppearanceSubtitle1">@style/TextAppearance.Claptrap.Subtitle1</item>
+    <item name="textAppearanceSubtitle2">@style/TextAppearance.Claptrap.Subtitle2</item>
+    <item name="textAppearanceBody1">@style/TextAppearance.Claptrap.Body1</item>
+    <item name="textAppearanceBody2">@style/TextAppearance.Claptrap.Body2</item>
+    <item name="textAppearanceButton">@style/TextAppearance.Claptrap.Button</item>
+    <item name="textAppearanceCaption">@style/TextAppearance.Claptrap.Caption</item>
+    <item name="textAppearanceOverline">@style/TextAppearance.Claptrap.Overline</item>
+    <!--Material shape attributes-->
+    <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Claptrap.SmallComponent</item>
+    <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Claptrap.MediumComponent
+    </item>
+    <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Claptrap.LargeComponent</item>
+    <!--Component styles-->
+    <item name="materialAlertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>
+    <item name="toolbarStyle">@style/Widget.MaterialComponents.Toolbar.PrimarySurface</item>
+    <item name="android:navigationBarDividerColor" tools:ignore="NewApi">#E5E5E5</item>
+  </style>
+
+  <style name="Base.Theme.MaterialThemeBuilder" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <item name="android:statusBarColor" tools:ignore="NewApi">?attr/colorPrimaryVariant</item>
+    <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+    <item name="android:navigationBarColor" tools:ignore="NewApi">?android:attr/colorBackground
+    </item>
+    <item name="android:windowLightNavigationBar" tools:ignore="NewApi">true</item>
+    <item name="android:windowBackground">?attr/colorPrimarySurface</item>
+  </style>
+</resources>

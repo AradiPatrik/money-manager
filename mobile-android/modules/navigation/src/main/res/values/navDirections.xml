@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- TODO: remove these -->
+  <item name="nav_direction_todos" type="id" />
+  <item name="nav_direction_edit_todos" type="id" />
+  <item name="nav_action_todos_to_edit_todos" type="id" />
+  <item name="nav_direction_transactions" type="id" />
+  <item name="nav_unique" type="id" />
+  <!-- TODO: remove these -->
+</resources>

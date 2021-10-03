@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/front_layer"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    app:shapeAppearance="@style/ShapeAppearance.Claptrap.MediumComponent.OnlyTop"
+    app:cardPreventCornerOverlap="false"
+    app:cardElevation="?attr/elevationLevelOne"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" >
+
+  </com.google.android.material.card.MaterialCardView>
+
+  <TextView
+    android:id="@+id/total"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:textAppearance="?attr/textAppearanceHeadline4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:elevation="?attr/elevationLevelOne"
+    android:textColor="?attr/colorOnSurface"
+    android:includeFontPadding="true"
+    android:text="$ 167,815.00" />
+
+  <View
+    android:id="@+id/line_1"
+    android:layout_width="0dp"
+    android:layout_height="2dp"
+    app:layout_constraintWidth_percent="0.6"
+    android:layout_marginStart="16dp"
+    android:elevation="?attr/elevationLevelOne"
+    app:layout_constraintStart_toStartOf="parent"
+    android:background="?attr/extraColorBlue"
+    app:layout_constraintTop_toBottomOf="@id/total" />
+
+  <View
+    android:id="@+id/line_2"
+    android:layout_width="0dp"
+    android:layout_height="2dp"
+    app:layout_constraintWidth_percent="0.2"
+    android:elevation="?attr/elevationLevelOne"
+    app:layout_constraintStart_toEndOf="@id/line_1"
+    android:background="?attr/extraColorAmber"
+    app:layout_constraintTop_toBottomOf="@id/total" />
+
+  <View
+    android:id="@+id/line_3"
+    android:layout_width="0dp"
+    android:layout_height="2dp"
+    android:elevation="?attr/elevationLevelOne"
+    app:layout_constraintStart_toEndOf="@id/line_2"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginEnd="16dp"
+    android:background="?attr/extraColorPurple"
+    app:layout_constraintTop_toBottomOf="@id/total" />
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/wallets_recycler_view"
+    android:layout_marginTop="8dp"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:elevation="?attr/elevationLevelOne"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/line_1"
+    tools:listitem="@layout/list_item_wallet"
+    tools:itemCount="3"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

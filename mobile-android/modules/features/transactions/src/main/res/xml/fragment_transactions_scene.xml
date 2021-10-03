@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+  <Transition
+    motion:constraintSetEnd="@+id/fab_at_middle"
+    motion:constraintSetStart="@+id/fab_at_bottom"
+    motion:duration="@dimen/default_animation_speed"
+    motion:pathMotionArc="startHorizontal" />
+
+  <Transition
+    motion:constraintSetEnd="@+id/action_visible"
+    motion:constraintSetStart="@+id/fab_at_middle"
+    motion:duration="@dimen/default_animation_speed"/>
+
+  <Transition
+    motion:constraintSetEnd="@+id/categories_visible"
+    motion:constraintSetStart="@+id/action_visible"
+    motion:duration="@dimen/default_animation_speed">
+    <KeyFrameSet>
+      <KeyAttribute
+        android:alpha="1"
+        motion:framePosition="0"
+        motion:motionTarget="@+id/category_list_background" />
+    </KeyFrameSet>
+  </Transition>
+
+  <Transition
+    motion:constraintSetEnd="@id/action_visible"
+    motion:constraintSetStart="@+id/categories_visible"
+    motion:duration="@dimen/default_animation_speed" />
+
+  <Transition
+    motion:constraintSetStart="@+id/fab_at_bottom"
+    motion:constraintSetEnd="@+id/month_selector_shown"
+    motion:duration="300" />
+
+  <Transition
+    motion:constraintSetStart="@+id/fab_at_bottom"
+    motion:constraintSetEnd="@+id/wallet_sheet_shown"
+    motion:duration="300" />
+
+  <Include motion:constraintSet="@xml/constraint_set_transactions_fab_at_bottom" />
+
+  <Include motion:constraintSet="@xml/constraint_set_transactions_fab_at_middle" />
+
+  <Include motion:constraintSet="@xml/constraint_set_transactions_action_visible" />
+
+  <Include motion:constraintSet="@xml/constraint_set_transactions_categories_visible" />
+
+  <ConstraintSet android:id="@+id/month_selector_shown">
+    <Constraint android:id="@+id/front_layer">
+      <Layout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="112dp"
+        motion:layout_constraintTop_toTopOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintBottom_toBottomOf="parent" />
+    </Constraint>
+
+    <Constraint android:id="@+id/year_selection_layer">
+      <Layout
+        motion:layout_constraintTop_toTopOf="parent"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="0dp"
+        android:layout_height="300dp" />
+    </Constraint>
+
+    <Constraint android:id="@id/fab_background">
+      <CustomAttribute
+        motion:attributeName="cardElevation"
+        motion:customDimension="?attr/elevationFab" />
+    </Constraint>
+  </ConstraintSet>
+
+  <ConstraintSet android:id="@+id/wallet_sheet_shown">
+    <Constraint android:id="@+id/wallets_menu">
+      <Layout
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        motion:layout_constraintStart_toStartOf="parent"
+        motion:layout_constraintEnd_toEndOf="parent"
+        motion:layout_constraintBottom_toTopOf="@+id/bottom_app_bar" />
+    </Constraint>
+
+    <Constraint android:id="@id/fab_background">
+      <CustomAttribute
+        motion:attributeName="cardElevation"
+        motion:customDimension="?attr/elevationFab" />
+    </Constraint>
+  </ConstraintSet>
+
+</MotionScene>

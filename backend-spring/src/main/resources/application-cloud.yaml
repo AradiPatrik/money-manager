@@ -1,0 +1,15 @@
+googleJwkProvider: https://www.googleapis.com/oauth2/v3/certs
+audience: 93355315460-nf3aqe9s763a521hgp3a1mrpkv9sc10r.apps.googleusercontent.com
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+logging.level.web: DEBUG
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="purple_200">#bb86fc</color>
+  <color name="purple_500">#6200ee</color>
+  <color name="purple_600">#4b01d0</color>
+  <color name="purple_700">#3700b3</color>
+
+  <color name="blue_50">#b4e7ff</color>
+  <color name="blue_100">#b4e7ff</color>
+  <color name="blue_200">#82d7ff</color>
+  <color name="blue_300">#4fc7ff</color>
+  <color name="blue_400">#27bbff</color>
+  <color name="blue_500">#00AEFF</color>
+  <color name="blue_600">#03a0f0</color>
+  <color name="blue_700">#058ddb</color>
+  <color name="blue_800">#057bc7</color>
+  <color name="blue_900">#065ba5</color>
+
+  <color name="amber_50">#fce8e5</color>
+  <color name="amber_100">#ffcbb7</color>
+  <color name="amber_200">#ffa889</color>
+  <color name="amber_300">#ff8659</color>
+  <color name="amber_400">#ff6b33</color>
+  <color name="amber_500">#ff5100</color>
+  <color name="amber_600">#f44b00</color>
+  <color name="amber_700">#e64300</color>
+  <color name="amber_800">#d93c00</color>
+  <color name="amber_900">#c12c00</color>
+
+  <color name="lime_100">#f0f4c3</color>
+  <color name="lime_200">#e6ee9c</color>
+  <color name="lime_500">#cddc39</color>
+
+  <color name="light_green_200">#c5e1a5</color>
+  <color name="light_green_500">#8bc34a</color>
+
+  <color name="green_200">#03dac6</color>
+  <color name="green_500">#018786</color>
+
+  <color name="teal_200">#80cbc4</color>
+  <color name="teal_500">#009688</color>
+
+  <color name="cyan_200">#80deea</color>
+  <color name="cyan_500">#00bcd4</color>
+
+  <color name="pink_200">#f48fb1</color>
+  <color name="pink_500">#e91e63</color>
+
+  <color name="deep_purple_200">#b39ddb</color>
+  <color name="deep_purple_500">#673ab7</color>
+
+  <color name="red_200">#cf6679</color>
+  <color name="red_600">#b00020</color>
+
+  <!--Color surface (light), color on error (light), -->
+  <!--color on surface (dark), color on surface (dark)-->
+  <color name="white_50">#ffffff</color>
+
+  <color name="black_800">#121212</color> <!--Color surface (dark)-->
+  <!--Color on secondary (light), color on background (light),-->
+  <!--color on surface (light)-->
+  <color name="black_900">#000000</color>
+
+  <!-- Color alpha variants -->
+  <color name="white_alpha_medium">#33FFFFFF</color>
+  <color name="white_alpha_low">#11FFFFFF</color>
+
+</resources>

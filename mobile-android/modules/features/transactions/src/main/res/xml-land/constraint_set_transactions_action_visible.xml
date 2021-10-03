@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConstraintSet android:id="@+id/action_visible"
+  motion:deriveConstraintsFrom="@id/fab_at_middle"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:motion="http://schemas.android.com/apk/res-auto">
+  <Constraint android:id="@+id/fab_background">
+    <Layout
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      motion:layout_constraintBottom_toBottomOf="@id/card_bottom"
+      motion:layout_constraintEnd_toEndOf="@+id/transactions_halfway_guideline"
+      motion:layout_constraintStart_toStartOf="parent"
+      motion:layout_constraintTop_toTopOf="@+id/number_pad" />
+
+    <CustomAttribute
+      motion:attributeName="cardBackgroundColor"
+      motion:customColorValue="?attr/colorSurface" />
+
+    <CustomAttribute
+      motion:attributeName="cardElevation"
+      motion:customDimension="?attr/elevationLevelFour" />
+  </Constraint>
+
+  <Constraint android:id="@+id/fab_icon">
+    <CustomAttribute
+      motion:attributeName="colorFilter"
+      motion:customColorValue="?attr/colorOnSurface" />
+  </Constraint>
+
+  <Constraint android:id="@+id/category_list_background">
+    <PropertySet
+      android:alpha="1"
+      android:visibility="visible" />
+  </Constraint>
+
+  <Constraint android:id="@+id/fab_icon">
+    <Layout
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_marginBottom="32dp"
+      motion:layout_constraintBottom_toBottomOf="parent"
+      motion:layout_constraintEnd_toEndOf="@id/guide_button_3"
+      motion:layout_constraintStart_toStartOf="@id/guide_button_3" />
+
+    <CustomAttribute
+      motion:attributeName="colorFilter"
+      motion:customColorValue="?attr/colorOnSurface" />
+  </Constraint>
+
+  <Constraint android:id="@+id/number_pad">
+    <Layout
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      motion:layout_constraintBottom_toBottomOf="parent"
+      motion:layout_constraintEnd_toEndOf="@+id/transactions_halfway_guideline"
+      motion:layout_constraintStart_toStartOf="parent"
+      motion:layout_constraintTop_toTopOf="parent" />
+  </Constraint>
+
+  <Constraint android:id="@+id/category_list_background">
+    <Layout
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      motion:layout_constraintBottom_toBottomOf="parent"
+      motion:layout_constraintEnd_toEndOf="@+id/transactions_halfway_guideline"
+      motion:layout_constraintStart_toStartOf="parent"
+      motion:layout_constraintTop_toTopOf="parent" />
+  </Constraint>
+
+  <Constraint android:id="@+id/guide_button_3">
+    <Layout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      motion:layout_constraintBottom_toBottomOf="parent"
+      motion:layout_constraintEnd_toEndOf="@+id/transactions_halfway_guideline"
+      motion:layout_constraintStart_toEndOf="@id/guide_button_2" />
+  </Constraint>
+
+  <Constraint android:id="@+id/category_recycler_view">
+    <PropertySet
+      android:visibility="invisible" />
+  </Constraint>
+
+  <Constraint android:id="@+id/categories_header">
+    <PropertySet
+      android:visibility="invisible" />
+  </Constraint>
+
+  <Constraint android:id="@+id/category_header_separator">
+    <PropertySet
+      android:visibility="invisible" />
+  </Constraint>
+
+</ConstraintSet>

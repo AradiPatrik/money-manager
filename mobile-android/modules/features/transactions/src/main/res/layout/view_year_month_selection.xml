@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  style="@style/Widget.MaterialComponents.Chip.Choice"
+  android:layout_height="wrap_content"
+  android:scrollbars="none">
+  <com.google.android.material.chip.ChipGroup
+    android:id="@+id/month_chip_group"
+    android:layout_width="wrap_content"
+    app:singleSelection="true"
+    app:checkedChip="@+id/month_button_december"
+    app:selectionRequired="true"
+    style="@style/Widget.MaterialComponents.Chip.Choice"
+    android:layout_height="wrap_content">
+    <View
+      android:layout_width="2dp"
+      android:layout_height="wrap_content" />
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      android:id="@+id/month_button_january"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:text="January"
+      android:textColor="@color/chip_text_color"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      app:chipStrokeWidth="1dp"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      android:elevation="?attr/elevationLevelTwo" />
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      app:chipStrokeWidth="1dp"
+      android:id="@+id/month_button_february"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:elevation="?attr/elevationLevelTwo"
+      android:textColor="@color/chip_text_color"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      android:text="February"/>
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      android:id="@+id/month_button_march"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:text="March"
+      android:textColor="@color/chip_text_color"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      app:chipStrokeWidth="1dp"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      android:elevation="?attr/elevationLevelTwo" />
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      app:chipStrokeWidth="1dp"
+      android:id="@+id/month_button_april"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:elevation="?attr/elevationLevelTwo"
+      android:textColor="@color/chip_text_color"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      android:text="April"/>
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      android:id="@+id/month_button_may"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:text="May"
+      android:textColor="@color/chip_text_color"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      app:chipStrokeWidth="1dp"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      android:elevation="?attr/elevationLevelTwo" />
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      app:chipStrokeWidth="1dp"
+      android:id="@+id/month_button_june"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:elevation="?attr/elevationLevelTwo"
+      android:textColor="@color/chip_text_color"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      android:text="June"/>
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      android:id="@+id/month_button_july"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:text="July"
+      android:textColor="@color/chip_text_color"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      app:chipStrokeWidth="1dp"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      android:elevation="?attr/elevationLevelTwo" />
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      app:chipStrokeWidth="1dp"
+      android:id="@+id/month_button_august"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:elevation="?attr/elevationLevelTwo"
+      android:textColor="@color/chip_text_color"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      android:text="Augustus"/>
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      android:id="@+id/month_button_september"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:text="September"
+      android:textColor="@color/chip_text_color"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      app:chipStrokeWidth="1dp"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      android:elevation="?attr/elevationLevelTwo" />
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      app:chipStrokeWidth="1dp"
+      android:id="@+id/month_button_october"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:elevation="?attr/elevationLevelTwo"
+      android:textColor="@color/chip_text_color"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      android:text="October"/>
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      android:id="@+id/month_button_november"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:text="November"
+      android:textColor="@color/chip_text_color"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      app:chipStrokeWidth="1dp"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      android:elevation="?attr/elevationLevelTwo" />
+
+    <com.google.android.material.chip.Chip
+      style="@style/Widget.MaterialComponents.Chip.Choice"
+      app:chipStrokeWidth="1dp"
+      android:id="@+id/month_button_december"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:elevation="?attr/elevationLevelTwo"
+      android:textColor="@color/chip_text_color"
+      app:chipStrokeColor="?attr/colorOnPrimarySurfaceAlphaLow"
+      app:chipBackgroundColor="@color/chip_background_on_surface"
+      android:text="December"/>
+
+    <View
+      android:layout_width="2dp"
+      android:layout_height="wrap_content" />
+  </com.google.android.material.chip.ChipGroup>
+</HorizontalScrollView>

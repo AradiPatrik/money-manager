@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/backdrop_motion_layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="?attr/colorPrimarySurface"
+  app:layoutDescription="@xml/fragment_main_scene">
+
+  <com.aradipatrik.claptrap.theme.widget.AnimatedVectorDrawableImageButton
+    android:id="@+id/menu_icon"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/default_backdrop_margin_start"
+    android:layout_marginTop="@dimen/default_backdrop_margin_vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:tint="?attr/colorOnPrimarySurface"
+    app:endToStart="@drawable/close_to_menu"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:startToEnd="@drawable/menu_to_close" />
+
+  <androidx.fragment.app.FragmentContainerView
+    android:id="@+id/custom_menu_container"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toTopOf="@id/child_host"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+    android:id="@+id/title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:clickable="false"
+    android:includeFontPadding="false"
+    android:text="@string/transaction_history"
+    android:textAppearance="?attr/textAppearanceHeadline6"
+    android:textColor="?attr/colorOnPrimarySurface"
+    app:layout_constraintBottom_toBottomOf="@+id/menu_icon"
+    app:layout_constraintStart_toEndOf="@id/menu_icon"
+    app:layout_constraintTop_toTopOf="@id/menu_icon" />
+
+  <com.aradipatrik.claptrap.backdrop.ui.BackdropBackLayerMenuItemView
+    android:id="@+id/transactions_menu_item"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    app:icon="@drawable/ic_money"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/title"
+    android:visibility="invisible"
+    app:title="@string/transaction_history" />
+
+  <com.aradipatrik.claptrap.backdrop.ui.BackdropBackLayerMenuItemView
+    android:id="@+id/wallets_menu_item"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:icon="@drawable/ic_money"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/transactions_menu_item"
+    android:visibility="invisible"
+    app:title="@string/wallets" />
+
+
+  <com.aradipatrik.claptrap.backdrop.ui.BackdropBackLayerMenuItemView
+    android:id="@+id/statistics_menu_item"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:icon="@drawable/ic_money"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/wallets_menu_item"
+    android:visibility="invisible"
+    app:title="@string/statistics" />
+
+  <androidx.fragment.app.FragmentContainerView
+    android:id="@+id/child_host"
+    android:name="androidx.navigation.fragment.NavHostFragment"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="@dimen/default_backdrop_margin_vertical"
+    app:defaultNavHost="false"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/menu_icon"
+    app:layout_constraintVertical_bias="0.0"
+    app:navGraph="@navigation/nav_child"
+    tools:layout="@layout/fragment_transactions" />
+
+  <View
+    android:id="@+id/header_anchor"
+    android:layout_width="0dp"
+    android:layout_height="32dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

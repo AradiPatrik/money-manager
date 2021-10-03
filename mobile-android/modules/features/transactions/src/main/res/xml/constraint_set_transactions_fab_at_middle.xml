@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConstraintSet android:id="@+id/fab_at_middle"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:motion="http://schemas.android.com/apk/res-auto">
+  <Constraint android:id="@+id/fab_background">
+    <Layout
+      android:layout_width="56dp"
+      android:layout_height="56dp"
+      motion:layout_constraintBottom_toBottomOf="parent"
+      motion:layout_constraintEnd_toEndOf="parent"
+      motion:layout_constraintStart_toStartOf="parent"
+      motion:layout_constraintTop_toTopOf="parent" />
+
+    <CustomAttribute
+      motion:attributeName="cardElevation"
+      motion:customDimension="?attr/elevationFab" />
+
+    <CustomAttribute
+      motion:attributeName="cardBackgroundColor"
+      motion:customColorValue="?attr/colorSurface" />
+
+    <CustomAttribute
+      motion:attributeName="radius"
+      motion:customDimension="32dp" />
+  </Constraint>
+
+  <Constraint android:id="@+id/fab_icon">
+    <CustomAttribute
+      motion:attributeName="colorFilter"
+      motion:customColorValue="?attr/colorOnSurface" />
+  </Constraint>
+
+  <Constraint
+    android:id="@+id/front_layer"
+    android:layout_width="0dp"
+    android:layout_height="200dp"
+    motion:layout_constraintEnd_toEndOf="parent"
+    motion:layout_constraintStart_toStartOf="parent"
+    motion:layout_constraintTop_toBottomOf="parent" />
+
+  <Constraint
+    android:id="@+id/transaction_recycler_view"
+    android:layout_width="0dp"
+    android:layout_height="200dp"
+    motion:layout_constraintEnd_toEndOf="parent"
+    motion:layout_constraintStart_toStartOf="parent"
+    motion:layout_constraintTop_toBottomOf="@+id/header_separator" />
+
+  <Constraint android:id="@+id/category_list_background">
+    <PropertySet android:visibility="invisible" />
+  </Constraint>
+</ConstraintSet>

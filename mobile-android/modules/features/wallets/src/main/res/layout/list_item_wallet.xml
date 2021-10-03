@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/list_item_two_line_height"
+  android:elevation="0dp"
+  app:cardBackgroundColor="?attr/colorSurface"
+  app:cardElevation="0dp">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+      android:id="@+id/stat_color"
+      android:layout_width="2dp"
+      android:layout_height="0dp"
+      android:layout_marginStart="16dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@id/wallet_name"
+      app:layout_constraintBottom_toBottomOf="@id/share_status"
+      android:background="?attr/extraColorBlue"
+      app:tint="?attr/colorPrimaryVariantPrimary" />
+
+    <TextView
+      android:id="@+id/wallet_name"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:text="Coffee"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:textColor="?attr/colorOnSurface"
+      app:layout_constraintStart_toEndOf="@id/stat_color"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/share_status"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:text="Shared"
+      android:textAppearance="?attr/textAppearanceBody1"
+      android:textColor="?attr/colorOnSurface"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/wallet_name"
+      app:layout_constraintTop_toBottomOf="@id/wallet_name" />
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/amount_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+      android:id="@+id/currency_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="32dp"
+      android:textAppearance="?attr/textAppearanceBody1"
+      android:textColor="?attr/colorOnSurface"
+      android:text="$"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@id/amount_guideline"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/wallet_total"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="16dp"
+      android:text="850"
+      android:textAppearance="?attr/textAppearanceBody1"
+      android:textColor="?attr/colorOnSurface"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/open_chevron"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+      android:id="@+id/open_chevron"
+      app:layout_constraintTop_toTopOf="@id/wallet_total"
+      app:layout_constraintBottom_toBottomOf="@id/wallet_total"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/ic_chevron_right"
+      app:tint="?attr/colorOnSurface"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginEnd="24dp" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

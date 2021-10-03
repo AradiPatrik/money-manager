@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConstraintSet android:id="@+id/fab_at_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:motion="http://schemas.android.com/apk/res-auto">
+  <Constraint android:id="@+id/fab_icon">
+    <CustomAttribute
+      motion:attributeName="colorFilter"
+      motion:customColorValue="?attr/colorOnSecondary" />
+  </Constraint>
+
+  <Constraint android:id="@+id/category_list_background">
+    <PropertySet android:alpha="0" />
+  </Constraint>
+
+  <Constraint android:id="@id/fab_background">
+    <CustomAttribute
+      motion:attributeName="cardElevation"
+      motion:customDimension="?attr/elevationFab" />
+
+    <CustomAttribute
+      motion:attributeName="cardBackgroundColor"
+      motion:customColorValue="?attr/colorAccent" />
+  </Constraint>
+</ConstraintSet>

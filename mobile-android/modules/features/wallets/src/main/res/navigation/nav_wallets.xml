@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/nav_graph_wallets"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  app:startDestination="@id/fragment_wallets">
+  <fragment
+    android:id="@+id/fragment_wallets"
+    android:name="com.aradipatrik.claptrap.wallets.ui.WalletsFragment"
+    android:label="Wallets">
+    <action
+      android:id="@+id/action_wallets_to_wallet_details"
+      app:destination="@id/fragment_wallet_details" />
+  </fragment>
+
+  <fragment
+    android:id="@+id/fragment_wallet_details"
+    android:name="com.aradipatrik.claptrap.wallets.ui.WalletDetailsFragment"
+    android:label="Wallet details" />
+</navigation>

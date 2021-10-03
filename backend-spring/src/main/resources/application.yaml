@@ -1,0 +1,21 @@
+googleJwkProvider: https://www.googleapis.com/oauth2/v3/certs
+audience: 93355315460-nf3aqe9s763a521hgp3a1mrpkv9sc10r.apps.googleusercontent.com
+spring:
+  r2bdc:
+    # jdbc:postgresql://<host>:<port>/<dbname>?sslmode=require&user=<username>&password=<password>
+    # postgres://postgres:admin@localhost:5432/claptrap
+    # jdbc:h2:mem:test_mem;DB_CLOSE_DELAY=-1;LOG=0;CACHE_SIZE=65536;LOCK_MODE=0;UNDO_LOG=0;MODE=MSSQLServer;
+    url: r2dbc:h2:mem:test_mem;DB_CLOSE_DELAY=-1;LOG=0;CACHE_SIZE=65536;LOCK_MODE=0;UNDO_LOG=0;MODE=PostgreSQL;
+    username: sa
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+logging.level.web: DEBUG
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="@dimen/list_item_two_line_height"
+  android:elevation="0dp"
+  app:cardBackgroundColor="?attr/colorSurface"
+  app:cardElevation="0dp">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+      android:id="@+id/category_icon"
+      android:layout_width="24dp"
+      android:layout_height="24dp"
+      android:layout_marginStart="24dp"
+      android:layout_marginTop="16dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:tint="?attr/colorPrimaryVariantPrimary"
+      tools:src="@drawable/category_icon_train" />
+
+    <TextView
+      android:id="@+id/transaction_note"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:text="Coffee"
+      android:textAppearance="?attr/textAppearanceSubtitle1"
+      android:textColor="?attr/colorOnSurface"
+      app:layout_constraintStart_toEndOf="@id/category_icon"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/transaction_date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="8dp"
+      android:text="2019 / 11 / 24"
+      android:textAppearance="?attr/textAppearanceBody1"
+      android:textColor="?attr/colorOnSurface"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@+id/transaction_note"
+      app:layout_constraintTop_toBottomOf="@id/transaction_note" />
+
+    <androidx.constraintlayout.widget.Guideline
+      android:id="@+id/amount_guideline"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      app:layout_constraintGuide_percent="0.7" />
+
+    <TextView
+      android:id="@+id/transaction_amount_icon"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="32dp"
+      android:textAppearance="?attr/textAppearanceBody1"
+      android:textColor="?attr/colorOnSurface"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintStart_toStartOf="@id/amount_guideline"
+      app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+      android:id="@+id/transaction_amount"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="24dp"
+      android:text="850"
+      android:textAppearance="?attr/textAppearanceBody1"
+      android:textColor="?attr/colorOnSurface"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+      android:id="@+id/separator"
+      android:layout_width="0dp"
+      android:layout_height="1dp"
+      android:layout_marginStart="64dp"
+      android:layout_marginEnd="16dp"
+      android:alpha="@dimen/alpha_separator"
+      android:background="?attr/colorOnSurface"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
